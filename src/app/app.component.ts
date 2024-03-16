@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
-  template: `<h1>Pixel Probe</h1>`,
-  styleUrls: ['./app.component.css'],
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'pixelprobe';
+  title = 'my-angular-app';
 }
